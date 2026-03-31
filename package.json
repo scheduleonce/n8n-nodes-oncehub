@@ -37,7 +37,7 @@
 			"dist/credentials/OnceHubApi.credentials.js"
 		],
 		"nodes": [
-			"dist/nodes/OnceHub/OnceHub.node.js"
+			"dist/nodes/OnceHub/OnceHubTrigger.node.js"
 		]
 	},
 	"devDependencies": {
