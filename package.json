@@ -1,0 +1,53 @@
+{
+	"name": "@oncehub/n8n-nodes-oncehub",
+	"version": "1.0.0",
+	"description": "OnceHub n8n community node package for integration",
+	"license": "MIT",
+	"homepage": "",
+	"keywords": [
+		"n8n-community-node-package"
+	],
+	"author": {
+		"name": "OnceHub Dev",
+		"email": "dev@oncehub.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/scheduleonce/n8n-nodes-oncehub.git"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"scripts": {
+		"build": "n8n-node build",
+		"build:watch": "tsc --watch",
+		"dev": "n8n-node dev",
+		"lint": "n8n-node lint",
+		"lint:fix": "n8n-node lint --fix",
+		"release": "n8n-node release",
+		"prepublishOnly": "n8n-node prerelease"
+	},
+	"files": [
+		"dist"
+	],
+	"n8n": {
+		"n8nNodesApiVersion": 1,
+		"strict": true,
+		"credentials": [
+			"dist/credentials/OnceHubApi.credentials.js"
+		],
+		"nodes": [
+			"dist/nodes/OnceHub/OnceHub.node.js"
+		]
+	},
+	"devDependencies": {
+		"@n8n/node-cli": "0.23.1",
+		"eslint": "9.32.0",
+		"prettier": "3.8.1",
+		"release-it": "19.2.4",
+		"typescript": "5.9.3"
+	},
+	"peerDependencies": {
+		"n8n-workflow": "*"
+	}
+}
