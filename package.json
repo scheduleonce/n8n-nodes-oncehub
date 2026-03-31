@@ -1,6 +1,6 @@
 {
 	"name": "@oncehub/n8n-nodes-oncehub",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "OnceHub n8n community node package for integration",
 	"license": "MIT",
 	"homepage": "",
