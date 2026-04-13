@@ -16,7 +16,10 @@ export class OnceHubTrigger implements INodeType {
 	description: INodeTypeDescription = {
 		displayName: 'OnceHub Trigger',
 		name: 'onceHubTrigger',
-		icon: 'file:oncehub.svg',
+		icon: {
+			light: 'file:oncehub.svg',
+			dark: 'file:oncehub.dark.svg',
+		},
 		group: ['trigger'],
 		version: 1,
 		description: 'Start workflow on OnceHub webhook events',
