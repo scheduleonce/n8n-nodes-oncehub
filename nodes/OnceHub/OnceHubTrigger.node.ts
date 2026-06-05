@@ -23,6 +23,7 @@ export class OnceHubTrigger implements INodeType {
 		group: ['trigger'],
 		version: 1,
 		description: 'Start workflow on OnceHub webhook events',
+		subtitle: '',
 		defaults: {
 			name: 'OnceHub Trigger',
 		},
